@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %} My Courses {%endblock%}
+
+{% block content %}
+<div class="cards">
+  {%for topic in topics%}
+  <div class="card">
+    <header><a href="{% url 'detail' topic.id %}"> {{topic.title}} </a></header>
+  </div>
+      {% endfor %}
+</div>
+
+{% endblock %}
