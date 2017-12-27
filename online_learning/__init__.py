@@ -1,9 +1,9 @@
-from online_learning.settings *
+from online_learning.settings import *
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS=[
-'localhost',
-'.herokuapp.com',
+    'localhost',
+    '.herokuapp.com',
 ]
