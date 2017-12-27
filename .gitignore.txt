@@ -1,3 +1,10 @@
-/assets/js/jquery-3.2.1.min.js
-db.sqlite3
-.env
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
