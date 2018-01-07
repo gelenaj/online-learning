@@ -1,1 +1,1 @@
-web: gunicorn online_learning.wsgi --log-file -
+web: gunicorn online_learning.deploy --log-file -

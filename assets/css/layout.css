@@ -201,4 +201,7 @@ article .steps {
   article .steps h3 + p {
     margin-left: 1em; }
 
-/*# sourceMappingURL=layout.css.map */
+#my-places{
+  width: 100%;
+  height:28rem;
+}
