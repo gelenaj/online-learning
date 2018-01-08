@@ -37,15 +37,12 @@
         </div>
       </nav>
     <div class="site-container">
-      <body onload='initialize()'>{%block content %}{% endblock %}
+      <body>{%block content %}{% endblock %}
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
     <script src="{% static "js/jquery-3.2.1.min.js" %}"></script>
     <script src="{% static "js/main.js" %}"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXh3u7PLl6_v0KfXOSsZ3lcvaYW1veS20&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXh3u7PLl6_v0KfXOSsZ3lcvaYW1veS20&callback=initMap">
     </script>
   </body>
     </div>
