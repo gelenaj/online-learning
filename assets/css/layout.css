@@ -17,6 +17,9 @@ h2{
   background-color: #E0DFD5;
 }
 
+div.courseDetailBox{
+  margin-left:30px;
+}
 
 table {
     border-collapse: collapse;

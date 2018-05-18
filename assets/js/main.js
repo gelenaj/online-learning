@@ -1,5 +1,8 @@
 $('.cards').hide().delay().fadeIn(1000);
-
+$(function(){$('.courseDetailBox').hide();$('.showCourseDetail').click(function () {
+    $(this).closest('div').find('.courseDetailBox').toggle();
+});
+});
 function initMap() {
       var center = {lat: -5.1065854, lng: -36.3224974};
       var map = new google.maps.Map(document.getElementById('my-places'), {

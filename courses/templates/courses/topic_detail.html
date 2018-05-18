@@ -10,9 +10,26 @@
 
   <section>
     {% for course in topic.course_set.all %}
+      <div class="showCourseDetail"><h3><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+        <a> {{course.title}}</a></h3>
+          <div class="courseDetailBox">
+            <p>{{course.description}}<p>
+              <table>
+                <tr>
+                  <th class="panel-heading">Source</th>
+                  <th class="panel-heading">Course status</th>
+                </tr>
+                <tr  class="panel">
+                  <td>{{course.source}}</td>
+                  <td>{{course.status}}</td>
+                </tr>
+              </table>
 
-      <h3><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span><a href="{% url 'course' topic_pk=course.topic.pk course_pk=course.pk %}"> {{course.title}}</a></h3>
+        </div>
+        </div>
+
     {% endfor %}
+
   </section>
 
 {% endblock %}
